@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+#carousel {
+	margin: 0;
+	width: 650px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#gallery {
+	position: relative;
+	width: 529px;
+	float: left;
+}
+#gallery img {
+	/*border: 1px solid #d5d5d5;*/
+}
+.caption {
+	background: rgba(177, 20, 43, 0.30);
+    bottom: 0;
+    height: 102px;
+    left: 0;
+    position: absolute;
+    width: 529px;
+    z-index: 10;
+}
+.inner-caption {
+	padding: 10px;
+	color: #FFFFFF;
+}
+#thumbs {
+	float: right;
+}
+#thumbs .thumbs img {
+	border: 2px solid #d5d5d5;
+}
+#thumbs .thumbs li {
+	line-height: 27px;
+}
+#thumbs .thumbs .current {
+	position: relative;
+}
+#thumbs .thumbs .current img {
+	border: 2px solid #dd1936;
+}
+#thumbs .thumbs .current .current-arrow {
+	background:url(../images/sprite.png) no-repeat -121px -50px;
+	display: block;
+	width: 16px;
+	height: 31px;
+	position: absolute;
+	left: -16px;
+	top: 24px;
+}
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	background: rgba(179, 99, 41, 0.70);
+    bottom: 0;
+    height: 102px;
+    left: 0;
+    position: absolute;
+    width: 529px;
+    z-index: 10;
+	border-top: 1px solid #c59986;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 0;
+	float: right;
+	position: relative;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+	display: block;
+	margin-bottom: 11px;
+	position: relative;
+}
+.nivo-controlNav a:last-child {
+	/*margin-bottom: 0;*/
+}
+.nivo-controlNav a.active img {
+	/*border: 2px solid #b36329;*/
+}
+.nivo-controlNav img {
+	display:inline; /* Unhide the thumbnails */
+	position:relative;
+	border: 1px solid #d5d5d5;
+}
+.nivo-controlNav a.active .overlay {
+	/*background:url(../images/lava.png) no-repeat 0 0;
+	display: block;
+	width: 16px;
+	height: 29px;
+	position: absolute;
+	left: -16px;
+	top: 24px;
+	z-index:1000;*/
+}
+.lava {
+    background: url("../images/lava.png") no-repeat;
+    height: 79px;
+    left: -16px;
+    position: absolute;
+    width: 126px;
+    z-index: 1000;
+}
+#carousel .item-title {
+	font-size: 25px;
+	font-weight: bold;
+}
+#carousel .item-desc {
+	font-size: 15px;
+	margin: 10px 0 0 0;
+}s
